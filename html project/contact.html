@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shoply — Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Shoply</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul id="mainNav" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+           <li class="has-dropdown">
+            <button class="drop-toggle" aria-expanded="false">Categories ▾</button>
+            <ul class="dropdown">
+              <li><a href="clothes.html">Clothing</a></li>
+              <li><a href="accessories.html">Accessories</a></li>
+              <li><a href="shoes.html">shoes</a></li>
+              <li><a href="bags.html">bags</a></li>
+              <li><a href="jewellery.html">jewellery</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-btn">🌓</button>
+        <a class="cart-link" href="cart.html">🛒</a>
+        <button id="menuToggle" class="menu-toggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1>Contact Us</h1>
+    <p>If you have a question, fill the form below.</p>
+
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('Form submitted (demo)');">
+      <label>
+        Name
+        <input type="text" required>
+      </label>
+
+      <label>
+        Email
+        <input type="email" required>
+      </label>
+
+      <label>
+        Subject
+        <select>
+          <option>General</option>
+          <option>Order</option>
+          <option>Returns</option>
+        </select>
+      </label>
+
+      <label>
+        Message
+        <textarea rows="6" required></textarea>
+      </label>
+
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <!-- Footer as before -->
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>Shoply</h4>
+        <p>Quality products chosen with care.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>hello@shoply.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Shoply. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
